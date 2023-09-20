@@ -14,7 +14,7 @@ public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String name;
 
     public Department(){
 
@@ -28,12 +28,12 @@ public class Department {
         this.id = id;
     }
 
-    public String getNome() {
-        return this.nome;
+    public String getNname() {
+        return this.name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
 

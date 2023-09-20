@@ -18,7 +18,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String name;
     private String email;
 
     @ManyToOne
@@ -28,10 +28,10 @@ public class User {
     public User (){
         
     }
-    public User (Long id, String nome, String email) {
+    public User (Long id, String name, String email) {
 
         this.id = id;
-        this.nome = nome;
+        this.name = name;
         this.email = email;
 
     }
@@ -45,12 +45,12 @@ public class User {
         this.id = id;
     }
 
-    public String getNome() {
-        return this.nome;
+    public String getName() {
+        return this.name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
